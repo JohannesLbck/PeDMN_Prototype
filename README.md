@@ -4,17 +4,6 @@ This repository contains short testing scripts for highlighting the expressivity
 
 #### Repository Structure
 
-project-name/
-├── src/                # Main source code
-│   ├── main.py         # Entry point
-│   ├── utils.py        # Helper functions
-│   └── __init__.py     # Package initializer
-├── tests/              # Unit and integration tests
-│   ├── test_main.py
-│   └── test_utils.py
-├── README.md           # Project documentation
-└── requirements.txt    # Python dependencies
-
 PeDMN-Prototype/
 ├── logs/ # Contains the log files used for verifying PeDMN
 │   ├── ExA1.xes.yaml # Individualt Logs files from A1 over A5 to E5
