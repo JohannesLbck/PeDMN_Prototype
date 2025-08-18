@@ -23,8 +23,8 @@ C_Table_C = [
         ('E[-1].label == "B" and O["o1"]', 'A'),
         ('E[-1].label == "A"', 'B'),
         ('not "C" in E.labels() and O["o2"]', 'C'),
-        ("O['o2'] and E[-1].label == 'C' and E[-1].lifecycle == 'activity/done'","end"),
-        ("not O['o2'] and not O['o1] and E[-1].label == 'C' and E[-1].lifecycle == 'activity/done'","end"),
+        ("E[-1].label == 'C' and E[-1].lifecycle == 'activity/done'","end"),
+        ("not O['o2'] and not O['o1'] and 'B' in E.labels() ","end"),
         ]
 C_Table_D = [
         ( "len(E) == 0", "('A', 'B')"),
@@ -32,7 +32,8 @@ C_Table_D = [
         ("O['o2'] and not 'D' in E.labels()", "D"),
         ("O['o1'] and O['o2'] and not 'C' in E.labels() and not 'D' in E.labels()", "('C', 'D')"),
         ("E[-1].label == 'D' and E[-1].lifecycle == 'activity/done'","end"),
-        ("O['o1'] and E[-1].label == 'C' and E[-1].lifecycle == 'activity/done'","end"),
+        ("not O['o2'] and not O['o1']","end"),
+        ("not O['o2'] and O['o1'] and E[-1].label == 'C' and E[-1].lifecycle == 'activity/done'","end"),
         ]
 C_Table_E = [
         ("len(E) == 0", "A"),

@@ -33,7 +33,8 @@ class EventHistory:
         """Returns a dict mapping each label to a list of all events with that label."""
         label_map: Dict[str, List[Event]] = {}
         for event in self.events:
-            label_map.setdefault(event.label, []).append(event)
+            if event.lifecycle == "activity/done":
+                label_map.setdefault(event.label, []).append(event)
         return label_map
 
     def filter_by_label(self, label: str) -> List[Event]:
