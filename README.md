@@ -35,15 +35,5 @@ This script can be used to compare the execution that would be proposed accordin
 The results can be interpreted as follows: In each Line we state what the previous event was starting with "Before first event". Next there is a implies arrow that leads to a List []. The Activity labels in the List (e.g., ['A', 'B', etc]) are the possible activites that can be started in the next event. In addition it also always states the set O {} containing the dataobjects with their current values. Next we check what event was executed next according to the log, the rules are evaluated again to check the possible set of next activities and the (potentially updated) dataobjects O are printed again. A good way to check that the log would be a potential result according to the PeDMN model is to verify that a) the logs does not continue after ['end'] appears in the set of consequence and b) Whenever a new event is called it was previously in the set of possible activities. 
 
 
-### Syntax validation of PeDMN examples in the Paper
-
-This can be used to verify the syntax of the example conditions given in the paper.
-
-1. git clone
-2. pip install requirements.txt
-3. python3 iterative\_testing.py
-4. and/or python3 testing.py
-
-
 ### Example Rule Generation using LLMs
 We did very simple tests with a description of the task in the openai Interface which can be seen in [this shared conversation](https://chatgpt.com/share/68a3166c-6f08-800f-a27a-3f8ae2f2b8b1). The results are extremely promising, however they could likely be further improved by setting up a custom bot with a vector library giving context information in the background in a conversational approach. In particular it hallucinates endpoints quite freely, so the list of available endpoints should be described, or it should have to clearer describe what each endpoint/consequence does. A extremely simplied example of a more extensive prompt as would be required then can be seen in the ... script which requires a openai key to be added for testing. The example requirements used in the conversation are taken from [ZasadaEtAl](https://www.mdpi.com/2674-113X/2/1/4) and highlight a potential disconnect between current ex-post oriented compliance approaches and execution oriented execution, where several rules lead to processes ending prematurely if they were implemented as is. 
