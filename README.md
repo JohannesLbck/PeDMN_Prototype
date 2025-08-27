@@ -4,7 +4,7 @@ Repository for the development and testing of PeDMN, a DMN-based, execution-leve
 
 An overview of the PeDMN notation at its current state is:
 
-![PeDMN-Overview](DemoImages/DRD.png)
+![PeDMN-Overview](DemoImages/DRDV2.png)
 
 At its current state, this repository contains short testing scripts for highlighting the expressivity of PeDMN by modeling several example processes using PeDMN. The example processes are designed to highlight specific execution semantics instead of practical examples, so labels are {'A', 'B', etc}. To verify that the models correctly represent the intended execution semantics they are also compared to several event logs that were simulated by executing imperative versions of the example processes with timeouts as endpoints.
 
