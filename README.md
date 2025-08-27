@@ -12,16 +12,16 @@ At its current state, this repository contains short testing scripts for highlig
 ```
 PeDMN-Prototype/
 ├── logs/             # Contains the log files used for verifying PeDMN
-│   ├── ExA1.xes.yaml # Individualt Logs files from A1 over A5 to E5
+│   ├── ExA1.xes.yaml # Individual Logs files from A1 over A5 to E5
 │   ├── ...
 │   ├── ExE5.xes.yaml
-├── constraint.py     # Contains the encoded PeDMN constraint tables
-├── EventHistory.py   # A simple eventlog class
-├── iter\_testing.py  # Simulates execution using the example constraint table in the paper
+├── constraint.py     # Contains encoded PeDMN constraint tables
+├── EventHistory.py   # A simple event log class
+├── iter\_testing.py  # Simulates execution using several example constraints
 ├── preprocessing.py  # Preprocssing of the .xml.yaml logs
 ├── README.md         # You are reading it 
-├── testing.py        # Testing the evaluation of the example constraint table
-├── run.py            # Script for testing the 5 example processes with the 5 logs, example usage below
+├── testing.py        # Syntax testing of example constraints
+├── run.py            # Script for testing 5 example processes with 5 logs, example usage below
 ```
 
 #### Example PeDMN execution with synthetic logs 
