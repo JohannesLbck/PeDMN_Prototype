@@ -1,6 +1,6 @@
 ### PeDMN-Prototype
 
-Repository for the development and testing of PeDMN, a DMN-based, execution-level notation for BPMS-integrated execution of declarative processes. This research is currently in progress, so all content will be regularily updated and this README.md should be regarded as a preview for testing some of the current results. We do not lincense this work and retain all rights to the contents of this repository, such that no one may reproduce, distribute, or create derivative works without explicit written permission by the authors. 
+Repository for the development and testing of PeDMN, a DMN-based, execution-level notation for BPMS-integrated execution of declarative processes. This research is currently in progress, so all content will be regularily updated and this README.md should be regarded as a preview for testing some of the current results. We do not license this work and retain all rights to the contents of this repository, such that no one may reproduce, distribute, or create derivative works without explicit written permission by the authors. 
 
 An overview of the PeDMN notation is:
 
